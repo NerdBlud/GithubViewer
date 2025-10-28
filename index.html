@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GitHub Profile Finder</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <header class="navbar glassy">
+    <div class="logo">
+      <img src="assets/img/octocat.png" alt="GitHub logo" />
+      <h1>GitHub Finder</h1>
+    </div>
+    <button id="themeToggle" class="btn">🌙</button>
+  </header>
+
+  <main>
+    <section class="search-container">
+      <input
+        id="usernameInput"
+        type="text"
+        placeholder="Search GitHub user..."
+        autocomplete="off"
+      />
+      <div id="suggestions" class="suggestions"></div>
+    </section>
+
+    <section id="result" class="result fade-in"></section>
+  </main>
+
+  <script src="./app.js"></script>
+</body>
+</html>
